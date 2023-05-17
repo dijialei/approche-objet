@@ -28,4 +28,31 @@ public class Personne {
               ", adressPostale=" + adressPostale +
               '}';
    }
+   public void show(){
+      System.out.println(this.nom.toUpperCase()+this.prenom);
+   }
+
+   public void setNom(String nom) {
+      this.nom = nom;
+   }
+
+   public void setPrenom(String prenom) {
+      this.prenom = prenom;
+   }
+
+   public void setAdressPostale(AdressePostale adressPostale) {
+      this.adressPostale = adressPostale;
+   }
+
+   public String getNom() {
+      return nom;
+   }
+
+   public String getPrenom() {
+      return prenom;
+   }
+
+   public AdressePostale getAdressPostale() {
+      return adressPostale;
+   }
 }

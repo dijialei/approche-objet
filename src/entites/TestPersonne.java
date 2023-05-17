@@ -21,6 +21,8 @@ public class TestPersonne {
         Personne p3 =new Personne("DI","Lou");
         AdressePostale adressePostale = new AdressePostale(12,"av.clemenceau",34000,"Montpellier");
         Personne p4 = new Personne("Lee","Yonghui",adressePostale);
-        System.out.println(p4);
+        Personne p5 = new Personne("Leeyanting","Thomas");
+        p5.setAdressPostale(adressePostale);
+        System.out.println(p5);
     }
 }
