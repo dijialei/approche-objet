@@ -13,5 +13,8 @@ public class TestAdressePostale {
         ap2.name = "av.georges";
         ap2.ville ="Montpellier";
 
+        AdressePostale ap3 = new AdressePostale(12,"av.clemenceau",34000,"Montpellier");
+
+
     }
 }

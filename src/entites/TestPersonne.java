@@ -18,6 +18,9 @@ public class TestPersonne {
         p2.adressPostale.code = 34000;
         p2.adressPostale.name = "av.georges";
         p2.adressPostale.ville ="Montpellier";
-
+        Personne p3 =new Personne("DI","Lou");
+        AdressePostale adressePostale = new AdressePostale(12,"av.clemenceau",34000,"Montpellier");
+        Personne p4 = new Personne("Lee","Yonghui",adressePostale);
+        System.out.println(p4);
     }
 }
