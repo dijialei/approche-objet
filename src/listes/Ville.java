@@ -1,6 +1,6 @@
 package listes;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
     private  String nom;
     private  int nb;
 
@@ -34,5 +34,10 @@ public class Ville {
                 "nom='" + nom + '\'' +
                 ", nb=" + nb +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Ville o) {
+        return this.getNb()-o.getNb();
     }
 }
