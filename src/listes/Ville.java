@@ -30,7 +30,7 @@ public class Ville implements Comparable<Ville> {
 
     @Override
     public String toString() {
-        return "Ville{" +
+        return "{" +
                 "nom='" + nom + '\'' +
                 ", nb=" + nb +
                 '}';
