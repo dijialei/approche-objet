@@ -23,7 +23,7 @@ public class FusionMap {
         }
         keys = map2.keySet();
         for (Integer key : keys) {
-            map3.put(key,map2.get(key));
+            map3.put(key, map2.get(key));
 
         }
         System.out.println(map3);

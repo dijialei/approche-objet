@@ -21,6 +21,7 @@ public class LectureFichier {
             List<String> newLines =  new ArrayList<>();
             newLines.add("Nom;Code département;Nom de la région;Population totale");
             for (String line : lines) {
+                
                 if (i != 0) {
                     String[] data = line.split(";");
                     Ville ville = new Ville(data[6], data[2], data[1], Integer.parseInt(data[9].replace(" ", "")));
@@ -37,6 +38,9 @@ public class LectureFichier {
             Files.write(newPath, newLines);
 
         }
+        
+
+
 
     }
 }
